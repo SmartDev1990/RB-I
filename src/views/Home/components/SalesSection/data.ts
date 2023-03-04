@@ -2,8 +2,10 @@ import { TranslateFunction } from 'contexts/Localization/types'
 import { SalesSectionProps } from '.'
 
 export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('Trade anything. No registration, no hassle.'),
-  bodyText: t('Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.'),
+  headingText: t('Trade Your Favorite Tokens'),
+  bodyText: t(
+    'Trade any token on Core and Bitgert chain in seconds, just by connecting your wallet, keep your wallet key and never give it to anyone.',
+  ),
   reverse: false,
   primaryButton: {
     to: '/swap',
@@ -16,18 +18,16 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: true,
   },
   images: {
-    path: '/images/home/trade/',
-    attributes: [
-      { src: 'BNB', alt: t('BNB token') },
-      { src: 'BTC', alt: t('BTC token') },
-      { src: 'CAKE', alt: t('CAKE token') },
-    ],
+    path: '/images/home/earn/',
+    attributes: [{ src: 'BTC', alt: t('BTC token') }],
   },
 })
 
 export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('Earn passive income with crypto.'),
-  bodyText: t('PancakeSwap makes it easy to make your crypto work for you.'),
+  headingText: t('Earn passive income with Rice platform.'),
+  bodyText: t(
+    'Increase your financial income by staking or adding liquidity then put your LP token on the farming page and get passive income every second.',
+  ),
   reverse: true,
   primaryButton: {
     to: '/farms',
@@ -41,11 +41,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
   },
   images: {
     path: '/images/home/earn/',
-    attributes: [
-      { src: 'pie', alt: t('Pie chart') },
-      { src: 'stonks', alt: t('Stocks chart') },
-      { src: 'folder', alt: t('Folder with cake token') },
-    ],
+    attributes: [{ src: 'folder', alt: t('Folder with cake token') }],
   },
 })
 

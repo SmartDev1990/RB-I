@@ -65,13 +65,32 @@ const Home: React.FC = () => {
 				<Hero />
 			</StyledHeroSection>
 			<PageSection
-				innerProps={{ style: HomeSectionContainerStyles }}
-				background="linear-gradient(180deg, #085247 0%, #024942 100%)"
-				index={2}
-				hasCurvedDivider={false}
-			>
-				<Footer />
-			</PageSection>
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background={theme.colors.background}
+        containerProps={{
+          id: 'home-4',
+        }}
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <SalesSection {...swapSectionData(t)} />
+      </PageSection>
+			<PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background="linear-gradient(4deg, rgba(255,171,36,0.44879201680672265) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 74%, rgba(255,174,44,0.33674719887955185) 100%)"
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <SalesSection {...earnSectionData(t)} />
+      </PageSection>
+      <PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background="linear-gradient(202deg, rgba(255,171,36,0.44879201680672265) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 92%, rgba(255,174,44,1) 100%)"
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <MetricsSection />
+      </PageSection>
 		</>
 	)
 }

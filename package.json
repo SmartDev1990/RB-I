@@ -36,6 +36,12 @@
       "last 1 safari version"
     ]
   },
+  "lint-staged": {
+  "!(path/to/excluded/dir/**/*)*.ts": [
+    "eslint --fix",
+    "prettier --write"
+  ]
+},
   "dependencies": {
     "@binance-chain/bsc-connector": "^1.0.0",
     "@blocto/blocto-connector": "^0.2.3",
