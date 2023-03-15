@@ -118,15 +118,15 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     ],
   },
   {
-    label: t('Switch Network'),
+    label: t('Core Chain'),
     href: 'https://app.riceprotocol.org',
     icon: NftIcon,
     fillIcon: NftFillIcon,
     items: [
-          {
-          label: t('Core Mainnet'),
-          href: 'https://core.riceprotocol.org',
-          },
+      {
+        label: t('Core Mainnet'),
+        href: 'https://core.riceprotocol.org',
+      },
     ],
   },
   // {
